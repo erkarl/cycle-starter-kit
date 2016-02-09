@@ -8,7 +8,8 @@
     "build": "mkdirp dist && browserify app/main.js -t babelify --outfile dist/app.js",
     "watch": "mkdirp dist && watchify app/main.js -t babelify --outfile dist/app.js -v",
     "serve": "live-server ./",
-    "start": "npm-run-all --parallel watch serve"
+    "start": "npm-run-all --parallel watch serve",
+    "test": "mocha"
   },
   "dependencies": {
     "@cycle/core": "^6.0.2",
@@ -21,6 +22,7 @@
     "browserify": "^13.0.0",
     "live-server": "^0.9.1",
     "mkdirp": "^0.5.1",
+    "mocha": "^2.4.5",
     "npm-run-all": "^1.5.1",
     "watchify": "^3.7.0"
   }
