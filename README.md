@@ -30,3 +30,8 @@ npm run serve
 ```
 npm run watch
 ```
+
+**Test**
+```
+npm test
+```
