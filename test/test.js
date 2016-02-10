@@ -1,7 +1,7 @@
-var assert = require('assert');
+var expect = require('chai').expect
 
 describe('CycleTest', function() {
   it('works', function() {
-    assert.equal(true, true);
+    expect(true).to.eql(true);
   });
 });
